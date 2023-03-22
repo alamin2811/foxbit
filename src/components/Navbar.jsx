@@ -3,6 +3,8 @@ import { HiMenuAlt4 } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
 
 import logo from "../../images/logo.png";
+import twiter from "../../images/twitter.svg";
+import telegram from "../../images/telegram.svg";
 
 const NavBarItem = ({ title, classprops }) => (
   <li className={`mx-4 cursor-pointer ${classprops}`}>{title}</li>
@@ -17,8 +19,8 @@ const Navbar = () => {
         <img src={logo} alt="logo" className="w-32 cursor-pointer" />
       </div>
       <ul className="text-white md:flex hidden list-none flex-row justify-between items-center flex-initial">
-        <li><a href="https://twitter.com/clickFoxBit"><img className="text-center mx-2 cursor-pointer" src="../../images/twitter.svg" alt="icon" /></a></li>
-        <li><a href="https://t.me/clickFoxBit"><img className="text-center mx-2 cursor-pointer" src="../../images/telegram.svg" alt="icon" /></a></li>
+        <li><a href="https://twitter.com/clickFoxBit"><img className="text-center mx-2 cursor-pointer" src={twiter} alt="icon" /></a></li>
+        <li><a href="https://t.me/clickFoxBit"><img className="text-center mx-2 cursor-pointer" src={telegram} alt="icon" /></a></li>
         <li className="bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]">
           Login
         </li>

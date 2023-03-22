@@ -1,6 +1,9 @@
 import React from "react";
 
 import logo from "../../images/logo.png";
+import twiter from "../../images/twitter.svg";
+import telegram from "../../images/telegram.svg";
+
 
 const Footer = () => (
   <div className="w-full flex md:justify-center justify-between items-center flex-col p-4 gradient-bg-footer">
@@ -9,8 +12,8 @@ const Footer = () => (
         <img src={logo} alt="logo" className="w-32" />
       </div>
       <div className="flex flex-1 justify-end items-center flex-wrap sm:mt-0 mt-5 w-full">
-        <a href="https://twitter.com/clickFoxBit"><img className="text-center mx-2 cursor-pointer" src="../../images/twitter.svg" alt="icon" /></a>
-        <a href="https://t.me/clickFoxBit"><img className="text-center mx-2 cursor-pointer" src="../../images/telegram.svg" alt="icon" /></a>        
+        <a href="https://twitter.com/clickFoxBit"><img className="text-center mx-2 cursor-pointer" src={twiter} alt="icon" /></a>
+        <a href="https://t.me/clickFoxBit"><img className="text-center mx-2 cursor-pointer" src={telegram} alt="icon" /></a>        
       </div>
     </div>
 
